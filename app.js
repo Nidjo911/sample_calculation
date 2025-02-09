@@ -13,14 +13,13 @@ const testDataFunction = () => {};
 // View engine setup
 app.set('views', VIEWS_DIR);
 app.set('view engine', VIEW_ENGINE);
+app.use(express.static('public'));
 
-/*  */
-// Routes
-// home route is /
-app.get('/', (req, res) => {
+const homeRoutes = require('./routes/home');
+app.use(homeRoutes);
 
-  res.render('index');
-});
+const calculationRoutes = require('./routes/calculations');
+app.use(calculationRoutes);
 
 // I will get client data (numbers), calculate on server, and give back to client
 

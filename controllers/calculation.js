@@ -1,0 +1,2 @@
+
+const dummyData = 10;
