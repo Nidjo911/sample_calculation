@@ -1,5 +1,4 @@
-// app.js
-import express from 'express';
+const express = require('express');
 // Create Express application
 const app = express();
 
@@ -17,23 +16,18 @@ app.set('view engine', VIEW_ENGINE);
 
 /*  */
 // Routes
+// home route is /
 app.get('/', (req, res) => {
 
-  res.render('index', {
-    title: 'Tensile Test',
-    labels,
-    forces: data,
-    strains,
-    stresses
-  });
+  res.render('index');
 });
-/* 
-app.use(express.static('public')); */
+
+// I will get client data (numbers), calculate on server, and give back to client
 
 // Start server
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
 
-
-export default app;
+/* 
+export default app; */

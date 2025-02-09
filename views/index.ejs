@@ -18,14 +18,39 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        .data-section{
+            background-color: beige;
+            width: 100px;
+            height: fit-content;
+            padding: 10px;
+            margin: 10px;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="data-section">
         <h2>Input</h2>
+        <label for="connectors">Enter your test product data: </label>
+        <input type="text" name="connector-name" id="">
+        <input type="number" name="connector-poles" id="">
     </div>
 
+    <div>
+        <input type="checkbox" id="" name="test1" value="t1">
+        <label for="test1"> Test 1: Mechanical</label><br>
+        <input type="checkbox" id="" name="test2" value="t2">
+        <label for="test2"> Test 2: Test 2</label><br>
+        <input type="checkbox" id="" name="test3" value="t3">
+        <label for="test3"> Test 3: Test 3</label><br>
+    </div>
+
+
+    <div class="result-section">
+        <p>Sample calculation result: </p>
+        <span></span>
+    </div>
 
 </body>
 
