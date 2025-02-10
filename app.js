@@ -10,6 +10,7 @@ const VIEWS_DIR = './views';
 // Data generation function
 const testDataFunction = () => {};
 
+
 // View engine setup
 app.set('views', VIEWS_DIR);
 app.set('view engine', VIEW_ENGINE);
@@ -27,6 +28,3 @@ app.use(calculationRoutes);
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
-
-/* 
-export default app; */
