@@ -7,9 +7,6 @@ const PORT = 3000;
 const VIEW_ENGINE = 'ejs';
 const VIEWS_DIR = './views';
 
-// Data generation function
-const testDataFunction = () => {};
-
 
 // View engine setup
 app.set('views', VIEWS_DIR);

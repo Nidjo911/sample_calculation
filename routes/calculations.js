@@ -1,6 +1,6 @@
+const express = require('express');
+const router = express.Router();
+const kontrolerZaKalkulacije = require('../controllers/calculation');
 
-const express = require('./express');
-const router = express.Router;
-
-
-router.get('/performTestSampleCalculations', calculationController.getCalculation);
+router.get('/performTestSampleCalculations', kontrolerZaKalkulacije.dohvatiMiKalkulacije);
+module.exports = router;
