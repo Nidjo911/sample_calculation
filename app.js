@@ -19,8 +19,6 @@ app.use(homeRoutes);
 const calculationRoutes = require('./routes/calculations');
 app.use(calculationRoutes);
 
-// I will get client data (numbers), calculate on server, and give back to client
-
 // Start server
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);

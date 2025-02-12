@@ -1,11 +1,16 @@
 
-const dummyData = 10;
-
 //dohvatiMiKalkulacije
 
 module.exports = {
     dohvatiMiKalkulacije: (req, res) => {
-        console.log(req);
-        res.send(broj = dummyData);
-    } 
+
+        try {
+            const dummyData = 10;
+            res.json({ broj: dummyData });
+
+        } catch (error) {
+            console.log(`Error in calcs! => ${error}`);
+            res.status(500).json({error: "err name"});
+        }
+    }
 }
