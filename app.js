@@ -1,3 +1,5 @@
+// start app with nodemon: npm run dev
+
 const express = require('express');
 // Create Express application
 const app = express();
