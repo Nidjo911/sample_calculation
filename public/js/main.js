@@ -4,7 +4,7 @@ async function dohvatiMiPodatke() {
     console.log(response.body);
     const odgovor = await response.json();
     console.log(odgovor);
-}
+};
 
 async function dohvatiNekiBroj() {
     console.log("getting you a number... wait a sec pls");
@@ -21,4 +21,21 @@ async function dohvatiNekiBroj() {
         console.log(error.log);
     }
 
-}
+};
+
+async function dohvatiSretniBroj() {
+    console.log("getting you a number... wait a sec pls");
+    try {
+        const response = await fetch('/getMeALuckyNumber');
+        const tekst = await response.text();
+        const rezultat = parseInt(tekst);
+        console.log(`Sretni broj je ... ${rezultat} `);
+        console.log(`Tip podatka je: ${(typeof rezultat)} `);
+        // upisi u DOM
+        document.getElementById("brojFeedback").innerText = rezultat;
+    }
+    catch (error) {
+        console.log(error.log);
+    }
+
+};

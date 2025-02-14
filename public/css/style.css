@@ -14,3 +14,10 @@ body {
 *{
     background-color: pink;
 }
+.buttons-section{
+    background-color: rgb(240, 240, 196);
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
