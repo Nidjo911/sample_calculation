@@ -1,5 +1,6 @@
 module.exports = {
 
     dummyData: 100,
-    luckyNumber: 7
+    luckyNumber: 7,
+    testsArray : []
 }
